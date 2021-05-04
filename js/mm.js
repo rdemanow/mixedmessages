@@ -6,7 +6,7 @@ function load() {
   //select a random index
   const rIdx = Math.floor(Math.random() * quotes.length);
   //turn the quote into a string:
-  qString = `${quotes[rIdx].quote}<br />- ${quotes[rIdx].author}`;
+  qString = `<p>${quotes[rIdx].quote}</p><footer style="text-align: right">- ${quotes[rIdx].author}</footer>`;
   //put the text in the DOM with id of randomizeMe
   const spot = document.getElementById("randomizeMe");
   spot.innerHTML = qString;
